@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5CC1B9">
+    <link rel="icon" href="pic/Logo icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/unpkg.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <title>Ehsan Tahami Uni Project</title>
+</head>
+
+<body>
+    <img class="go-to-top-icon" id="myBtn" onclick="topFunction()" src="pic/go to top.png" alt="go top"
+        title="پرش به بالا">
+    <!-- Header -->
+    <div class="header">
+        <!-- Information bar -->
+        <div class="info-bar">
+            <div>
+                <div class="info-part">
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a>پشتیبانی: tahamiehsan@yahoo.com</a>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <a>پیگیری سفارش: 09137592384</a>
+                    </span>
+                    <div id="toggle">
+                        <i class="bi bi-moon-fill"></i>
+                        <i class="bi bi-brightness-high-fill"></i>
+                        <div id="ball" onclick="ShiftBall()" class=" ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header part 2  search-box & logo & sign-->
+        <section class="header-part2">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+
+                    <div class="col-lg-2 col-sm-2">
+                        <div class="logo">
+                            <a href="index.html"><img src="pic/Logo.png" alt="logo"></a>
+                        </div>
+                        <div class="humber-menu-pic">
+                            <!-- Slide bar -->
+                            <button class="btn btn-primary" id="humber_menu_button" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <i class="fa-solid fa-bars" id="humber-menu-icon"></i>
+
+                            </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">منو</h5> -->
+                                    <img src="pic/Logo.png" alt="logo" title="Ehsan Tahami">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- second navbar slide bar (responsive) -->
+                                <div class="offcanvas-body">
+                                    <ul class="sec-nav" id="accordion">
+                                        <!-- Mobile -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item1" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> گوشی موبایل</h3>
+                                                    <img src="pic/down-arrow-svgrepo-com.svg" alt="arrow" />
+
+                                                </a>
+
+                                            </li>
+                                            <div class="collapse" id="item1" data-parent="#accordion">
+                                                <li class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">
+                                                                <h4>آیفون</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>سامسونگ</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>شیائومی</h4>
+                                                            </a></li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                        </div>
+
+                                        <!-- lap top -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item2" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> لپ تاپ </h3>
+                                                    <img src="pic/down-arrow-svgrepo-com.svg" alt="arrow" />
+
+                                                </a>
+
+                                            </li>
+                                            <div class="collapse" id="item2">
+                                                <li class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">
+                                                                <h4>مک بوک</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>ایسوس</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>اچ پی</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>لنوو</h4>
+                                                            </a></li>
+                                                    </ul>
+
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <!-- Head Phone -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item3" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> هدفون </h3>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- watch -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item4" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> ساعت های هوشمند </h3>
+                                                    <img src="pic/down-arrow-svgrepo-com.svg" alt="arrow" />
+
+                                                </a>
+
+                                            </li>
+                                            <div class="collapse" id="item4">
+                                                <li class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">
+                                                                <h4>اپل واچ </h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>سامسونگ واچ</h4>
+                                                            </a></li>
+                                                    </ul>
+
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <!-- gard -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item5" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> گارد و محافظ صفحه</h3>
+                                                </a>
+
+                                            </li>
+                                        </div>
+                                        <!-- speaker -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item6" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> اسپیکر</h3>
+                                                </a>
+
+                                            </li>
+                                        </div>
+                                        <!-- gadgets -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item7" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> گجت های پوشیدنی </h3>
+                                                </a>
+
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- END Slide bar -->
+
+                            <!-- responsive sign in box -->
+                            <div class="sign-box" id="sign-box-responsive">
+                                <div class="cart-box" style="cursor:pointer;">
+                                    <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart"
+                                        title="سبد خرید">
+                                </div>
+
+                                <button>
+                                    <span>ورود | ثبت نام</span>
+                                </button>
+                            </div>
+                            <!-- responsive sign in box end -->
+
+
+                        </div>
+                    </div>
+
+                    <!-- search box -->
+
+                    <div class="col-lg-7 col-sm-6">
+
+                        <div class="search-box">
+                            <div>
+                                <input type="search" placeholder="جست و جوی نام برند کالا، دسته بندی و ... ">
+                                <button>
+                                    <span>جستجو</span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- sign box -->
+
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="sign-box">
+                            <div class="cart-box" style="cursor:pointer;">
+                                <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart" title="سبد خرید">
+                            </div>
+
+                            <button>
+                                <span>ورود | ثبت نام</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- nav bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <nav id="nav">
+                        <ul class="header-ul" id="a">
+                            <!-- mega menu -->
+                            <li class="more-menu" id="show-product-menu">
+                                <!-- Mobile -->
+                                <a href="#">گوشی موبایل</a>
+                                <img src="pic/down-arrow-svgrepo-com.svg" />
+                                <div class="product-menu">
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-header">
+                                            <p>خرید انواع مدل های گوشی موبایل</p>
+                                        </div>
+                                        <a href="#">
+                                            آیفون
+                                        </a>
+                                        <a href="#">
+                                            سامسونگ
+                                        </a>
+                                        <a href="#">
+                                            شیائومی
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-img">
+                                        <img src="pic/smartphone banner 2.png" alt="خرید گوشی موبایل"
+                                            title="خرید انواع گوشی موبایل">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- Lap top -->
+                            <li class="more-menu" id="show-product-menu"><a href="">لپ تاپ</a>
+                                <img src="pic/down-arrow-svgrepo-com.svg" />
+                                <div class="product-menu">
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-header">
+                                            <p>خرید انواع مدل های لپ تاپ</p>
+                                        </div>
+                                        <a href="#">
+                                            مک بوک
+                                        </a>
+                                        <a href="#">
+                                            ایسوس
+                                        </a>
+                                        <a href="#">
+                                            اچ پی
+                                        </a>
+                                        <a href="#">
+                                            لنوو
+                                        </a>
+
+                                    </div>
+                                    <div class="dropdown-img">
+                                        <img src="pic/خرید لپ تاپ.png" alt="خرید گوشی موبایل"
+                                            title="خرید انواع گوشی موبایل">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- Head Phone -->
+                            <li><a href="">هدفون و هندزفری</a></li>
+                            <!-- smart watch -->
+                            <li class="more-menu" id="show-product-menu"><a href="">ساعت هوشمند</a>
+                                <img src="pic/down-arrow-svgrepo-com.svg" />
+                                <div class="product-menu">
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-header">
+                                            <p>خرید انواع مدل های ساعت هوشمند</p>
+                                        </div>
+
+                                        <a href="#">
+                                            اپل واچ
+                                        </a>
+                                        <a href="#">
+                                            سامسونگ
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-img">
+                                        <img src="pic/خرید ساعت ها هوشمند.png" alt="خرید ساعت هوشمند"
+                                            title="خرید انواع  مدل های ساعت هوشمند" loading="lazy"
+                                            style="width: 300px;">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- gard -->
+                            <li><a href="">قاب و محافظ</a></li>
+                            <li><a href="#">اسپیکر</a> </li>
+                            <li><a href="">گجت های پوشیدنی</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="offer-box">
+                        <a href="#">بزرگ ترین حراج آنلاین را از دست نده!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider part-->
+    <section class="container banner-slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pic/consol.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="pic/consol2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- End Slider part -->
+    <!-- Three main products part start -->
+
+    <section class="container" id="main-part-first">
+        <div class="main-product-flex">
+            <div class="main-product-items">
+                <img src="pic/head phone banner.webp" alt="بنر هدفون" title="تا 15 درصد تخفیف">
+                <h3 class="main-product-items-covertxt1">هدفون ها</h3>
+                <span class="main-product-items-covertxt2">تا 15% تخفیف</span>
+            </div>
+            <div class="main-product-items">
+                <img src="pic/computer banner.webp" alt="بنر کامپیوتر" title="تا 10 درصد تخفیف">
+                <h3> کامپیوتر</h3>
+                <span>و تجهیزات جانبی</span>
+                <span id="second-span">تا 10% تخفیف </span>
+
+            </div>
+            <div class="main-product-items">
+                <img src="pic/mobile banner.webp" alt="بنر موبایل" title="تا 20 درصد تخفیف">
+                <h3 class="main-product-items-covertxt1"> گجت های هوشمند</h3>
+                <span class="main-product-items-covertxt2">تا 20% تخفیف</span>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Three main products part end -->
+
+    <!-- most sale products start -->
+
+    <section class="container" id="most-sale-product-container">
+        <div class="most-sale-title">
+            <a href="#">
+                <h2>محصولات پرفروش</h3>
+            </a>
+        </div>
+        <div class="most-sale-product-grid">
+            <div class="most-sale-product">
+                <div class="off-box">تخفیف</div>
+                <img src="pic/محصول پرفروش ساعت هوشمند.png.webp" alt="">
+                <h3>ساعت هوشمند اپل واچ 3 مدل 38mm Gold</h3>
+                <div class="product-price">
+                    <span class="old-price">۳,۲۰۰,۰۰۰ تومان</span>
+                    <span class="new-price">۲,۰۸۰,۰۰۰ تومان</span>
+
+                </div>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img src="pic/محصول پزفروش لپ تاپ.webp" alt="">
+                <h3>لپ تاپ 15 اینچی ایسر مدل Predator 15 G9-593-76KB </h3>
+                <span>۱۲,۰۰۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img src="pic/محصول پرفروش ساعت کلاسیک.webp" alt="ساعت هوشمند سامسونگ" style="width: 238px;">
+                <h3>ساعت هوشمند سامسونگ مدل Gear S3 Frontier SM-R760</h3>
+                <span>۱,۹۸۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img src="pic/محصول پرفروش هدفون بی سیم.webp" alt="">
+                <h3>هدفون بلوتوث لیبراتون Libratone Q Adapt On-Ear Headphones</h3>
+                <span>
+                    ۵۶۰,۰۰۰ تومان
+                </span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <div class="off-box">تخفیف</div>
+                <img src="pic/محصول پرفروش آیفون xs.webp" alt="">
+                <h3>گوشی موبایل اپل مدل XS Max دو سیم‌ کارت
+                </h3>
+                <div class="product-price">
+                    <span class="old-price">۱۸,۰۰۰,۰۰۰ تومان</span>
+                    <span class="new-price">۱۷,۱۰۰,۰۰۰ تومان</span>
+
+                </div>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img src="pic/دسته ps5.png" alt="" style="width: 190px;">
+                <h3>دسته PlayStation 5 دوتایی</h3>
+                <span>۱,۸۰۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <div class="off-box">تخفیف</div>
+                <img src="pic/محصول پرفروش ps5.png" alt="">
+                <h3>
+                    کنسول بازی PS5 DIGITAL EUROPE سری 11
+                </h3>
+                <div class="product-price">
+                    <span class="old-price">۲۱,۲۰۰,۰۰۰ تومان </span>
+                    <span class="new-price">۲۰,۵۰۰,۰۰۰ تومان</span>
+
+                </div>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img src="pic/محصول پرفروش کاور ایفون.png" alt="" style="width: 210px;">
+                <h3>قاب پشتی مدل نیک برای ایفون 11 ("6.1)</h3>
+                <span>۲۵۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- most sale products End -->
+    <!-- Scroll background Start -->
+    <section class="container bg" id="scroll-bg" style="max-width: initial !important;">
+        <div class="scroll-bg-pic"></div>
+        <div class="scroll-bg-textbox">
+            <strong>
+                <h2>
+                    پیشنهادات ویژه تا 50% تخفیف
+
+                </h2>
+
+            </strong>
+            <br>
+            <button>
+                مشاهده تخفیف های امروز
+            </button>
+        </div>
+
+
+    </section>
+    <!-- Scroll background End -->
+    <!-- best products part Start -->
+    <section class="best-products">
+        <!-- Title side -->
+        <div class="best-product-title">
+            <a href="#">
+                <h2>
+
+                    بهترین های لوازم جانبی
+
+                </h2>
+            </a>
+        </div>
+        <!-- swiper side -->
+        <div class="container" id="best-products">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-container">
+                            <div class="slide-card text-center">
+                                <picture>
+                                    <img class="slide-card-head-img" src="pic/محصول پرفروش کاور ایفون.png"
+                                        alt="کاور آیفون">
+                                </picture>
+                                <div class="slide-card-body">
+                                    <h5>قاب پشتی مدل نیک برای ایفون 11 ("6.1) </h5>
+                                    <span>۲۵۰,۰۰۰ تومان</span>
+                                    <button class="salebox-botton">افزودن به سبد خرید</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-container">
+                            <div class="slide-card text-center">
+                                <picture>
+                                    <img class="slide-card-head-img" src="pic/دسته ps5.png" alt="دسته دوتایی ps5"
+                                        style="width: 190px;">
+                                </picture>
+
+                                <div class="slide-card-body">
+                                    <h5>دسته PlayStation 5 دوتایی</h5>
+                                    <span>۱,۸۰۰,۰۰۰ تومان</span>
+                                </div>
+                                <div>
+                                    <button class="salebox-botton">افزودن به سبد خرید</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-container">
+                            <div class="slide-card text-center">
+                                <div class="ribbon-off ribbon-top-right ">
+                                    <span>تخفيف</span>
+                                </div>
+                                <picture>
+                                    <img class="slide-card-head-img" src="pic/هندزفری اصلی akg سامسونگ.png" alt="">
+                                </picture>
+                                <div class="slide-card-body">
+                                    <div class="slide-card-body">
+                                        <h5>
+                                            هندزفری اصلی akg سامسونگ - Samsung EO-IG955 AKG Earphone
+                                        </h5>
+                                        <div class="product-price">
+                                            <span class="old-price">۵۹۹,۰۰۰ تومان </span>
+                                            <span class="new-price">۳۹۹,۰۰۰ تومان</span>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="salebox-botton">افزودن به سبد خرید</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-container">
+                            <div class="slide-card text-center">
+                                <picture>
+                                    <img class="slide-card-head-img" src="pic/پایه نگهدارنده موبایل خودرو مک‌دودو.png"
+                                        alt="">
+                                </picture>
+
+                                <div class="slide-card-body">
+                                    <h5> پایه نگهدارنده موبایل خودرو مک‌دودو Mcdodo CH-160 Dual Coins Wireless Charger
+                                    </h5>
+                                    <span>۱,۸۰۰,۰۰۰ تومان</span>
+                                </div>
+                                <div>
+                                    <button class="salebox-botton">افزودن به سبد خرید</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-container">
+                            <div class="slide-card text-center">
+                                <picture>
+                                    <img class="slide-card-head-img" src="pic/پاور بانک.png" alt="پاور بانک">
+                                </picture>
+                                <div class="slide-card-body">
+                                    <h5>
+                                        پاور بانک 10000 میلی آمپر فست شارژ 50 واتی شیائومی Xiaomi PB1050ZM
+
+                                    </h5>
+                                    <span>۱,۱۹۹,۰۰۰ تومان</span>
+                                </div>
+                                <div>
+                                    <button class="salebox-botton">افزودن به سبد خرید</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-container">
+                            <div class="slide-card text-center">
+                                <div class="ribbon-off ribbon-top-right ">
+                                    <span>تخفيف</span>
+                                </div>
+
+                                <picture>
+                                    <img class="slide-card-head-img" src="pic/استند نگهدارنده مینی موبایل green.png"
+                                        alt="">
+                                </picture>
+                                <div class="slide-card-body">
+                                    <h5>
+                                        استند نگهدارنده مینی موبایل گرین Green Multipurpose Mini Mobile Stand
+
+                                    </h5>
+                                    <div class="product-price">
+                                        <span class="old-price">۲۱۰,۰۰۰ تومان </span>
+                                        <span class="new-price">۱۶۹,۰۰۰ تومان</span>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="salebox-botton">افزودن به سبد خرید</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- next & before button -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- best products part End -->
+
+
+    <!-- New Products part Start -->
+    <section class="container new-products">
+        <div class="most-sale-title">
+            <a href="#">
+                <h2>
+
+                    جدیدترین محصولات
+                </h2>
+            </a>
+        </div>
+        <div class="most-sale-product-grid">
+            <div class="most-sale-product">
+                <img class="most-sale-pic" src="pic/هدفون-بی-سیم-Phoinkas.png" alt="هدفون بی سیم">
+                <h3>
+                    هدفون بلوتوثی بی سیم Phoinikas
+
+                </h3>
+                <span>۶۹۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <div class="off-box">تخفیف</div>
+                <img class="most-sale-pic" src="pic/پهباد.png" alt="پهباد">
+                <h3>
+                    مویک ایر 2 اس <br>
+                    DJI AIR 2S
+
+                </h3>
+                <div class="product-price">
+                    <span class="old-price">۴۲,۸۰۰,۰۰۰ تومان </span>
+                    <span class="new-price">۴۱,۳۵۰,۰۰۰ تومان</span>
+
+                </div>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+
+            <div class="most-sale-product">
+                <img class="most-sale-pic" src="pic/جا-لیوانی-گرم-کن-و-سردکن-هوشمند-خودرو.png" alt="ساعت هوشمند سامسونگ"
+                    style="width: 238px;">
+                <h3>
+                    جا لیوانی هوشمند خودرو Nestchad
+
+                </h3>
+                <span>۹۸۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img class="most-sale-pic" src="pic/macbook.png" alt="مک بوک">
+                <h3>
+                    مک بوک ایر ۱۳ اینچ ۲۰۲۰ مدل MGN63 2020 M1 8GB-256GB
+
+                </h3>
+                <span>
+                    ۳۶,۰۰۰,۰۰۰ تومان
+                </span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <div class="off-box">تخفیف</div>
+                <img class="most-sale-pic" src="pic/asus laptop.png" alt="لپ تاپ ایسوس" style="width: 175px;">
+                <h3>
+                    لپ تاپ ۱۷ اینچی ایسوس Asus ROG STRIX G733ZW
+                </h3>
+                <div class="product-price">
+                    <span class="old-price">۷۱,۰۰۰,۰۰۰ تومان</span>
+                    <span class="new-price"> ۷۰,۴۹۹,۰۰۰ تومان</span>
+
+                </div>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img class="most-sale-pic" src="pic/13 pro.png" alt="13 pro آیفون" style="width: 190px;">
+                <h3>
+                    گوشی موبایل اپل آیفون 13 پرو مکس 256 گیگابایت
+
+                </h3>
+                <span>۴۹,۴۹۹,۰۰۰ تومان تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <div class="off-box">تخفیف</div>
+                <img class="most-sale-pic" src="pic/sh watch.png" alt="">
+                <h3>
+                    ساعت هوشمند شیائومی مدل Xiaomi Amazfit GTS 2
+                </h3>
+                <div class="product-price">
+                    <span class="old-price">۴,۷۱۰,۰۰۰ تومان </span>
+                    <span class="new-price">۳,۶۳۳,۰۰۰ تومان</span>
+
+                </div>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+            <div class="most-sale-product">
+                <img class="most-sale-pic" src="pic/محصول پرفروش کاور ایفون.png" alt="" style="width: 210px;">
+                <h3>قاب پشتی مدل نیک برای ایفون 11 ("6.1)</h3>
+                <span>۲۵۰,۰۰۰ تومان</span>
+                <div>
+                    <button>افزودن به سبد خرید</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products part End -->
+
+    <!-- The Warranty & instagram info part start -->
+    <section class="container warranty-instagram-info">
+        <div class="row">
+            <div class="warranty-instagram-info-inner">
+                <div class="warranty-info fadeingIn">
+                    <picture class="warranty-info-pic">
+                        <img src="pic/عکس موبایل-گارانتی 2.jpg" alt="عکس موبایل-گارانتی" title="ضمانت نامه ۳۶ ماهه ">
+                        <div class="warranty-info-text">
+                            <h3>عرضه کلیه محصولات با</h3>
+                            <h2>ضمانت نامه ۳۶ ماهه</h2>
+                            <button>
+                                مشاهده همه محصولات
+                            </button>
+                        </div>
+                    </picture>
+                </div>
+                <a href="https://www.instagram.com/ehsan_tha/">
+                    <div class="instagram-info fadeingIn">
+                        <div>
+                            <img src="pic/instagram-logo-glyph.png" alt="instagram logo"
+                                style="width: 80px; height:80px ;">
+                            <h2>
+                                در اینستاگرام ما را دنبال کنید
+                            </h2>
+                            <h4>
+                                مشاهده آخرین جشنواره ها، تخفیف ها، محصولات جدید و اطلاع رسانی های فروشگاه
+
+
+                            </h4>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container weblog">
+        <div class="row">
+            <div class="most-sale-title">
+                <a href="#">
+                    <h2>
+
+                        آخرین مطالب وبلاگ
+                    </h2>
+                </a>
+            </div>
+            <div class="last-weblog-post">
+
+                <div class="weblog-post">
+                    <img src="pic/iPhone-14-Pro-1-1.png" alt="iPhone 14 Pro">
+                    <div class="hover-shadow">
+                        <span>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+
+
+
+
+                        </span>
+                        <span>
+                            <i class="bi bi-suit-heart">۷</i>
+                            <i class="bi bi-chat">۲</i>
+
+                        </span>
+                    </div>
+                    <div class="weblog-post-text">
+                        <a href="#">
+                            <h5>
+                                آیفون ۱۴ شاید به ارتباط ماهواره‌ای مجهز شود
+    
+                            </h5>
+    
+                        </a>
+                        <span>
+                            ۶ شهریور ۱۴۰۱
+
+                        </span>
+                    </div>
+                    <div class="hover-shadow">
+                        <span>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+
+
+
+
+                        </span>
+                        <span>
+                            <i class="bi bi-suit-heart">۷</i>
+                            <i class="bi bi-chat">۲</i>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="weblog-post">
+                    <img src="pic/Apple-Watch-Pro-2-1.jpg" alt="">
+                    <div class="weblog-post-text">
+                        <a href="#">
+                            <h5>
+                                اپل واچ پرو ممکن است در رویداد ۱۶ شهریور معرفی شود
+                            </h5>
+    
+                        </a>
+                        <span>
+                            ۶ شهریور ۱۴۰۱
+
+                        </span>
+                    </div>
+                    <div class="hover-shadow">
+                        <span>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+
+
+
+
+                        </span>
+                        <span>
+                            <i class="bi bi-suit-heart">۷</i>
+                            <i class="bi bi-chat">۲</i>
+
+                        </span>
+                    </div>
+
+                </div>
+                <div class="weblog-post">
+                    <img src="pic/نقد و بررسی آنر 9X.jpg" alt="">
+                    <div class="weblog-post-text">
+                        <a href="#">
+                            <h5>
+                                نقد و بررسی کلاسیک گوشی آنر X9
+    
+                            </h5>
+    
+                        </a>
+                        <span>
+                            ۶ شهریور ۱۴۰۱
+
+                        </span>
+                    </div>
+                    <div class="hover-shadow">
+                        <span>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+
+
+
+
+                        </span>
+                        <span>
+                            <i class="bi bi-suit-heart">۷</i>
+                            <i class="bi bi-chat">۲</i>
+
+                        </span>
+                    </div>
+
+                </div>
+                <div class="weblog-post">
+                    <img src="pic/Galaxy-Z-4-and-Galaxy-Watch-5-2-768x488-1.jpg" alt="">
+                    <div class="weblog-post-text">
+                        <a href="#">
+                            <h5>
+                                رشد سامسونگ در بازار ساعت‌های هوشمند همچنان ادامه دارد
+    
+                            </h5>
+    
+                        </a>
+                        <span>
+                            ۶ شهریور ۱۴۰۱
+                        </span>
+                    </div>
+                    <div class="hover-shadow">
+                        <span>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+
+
+
+
+                        </span>
+                        <span>
+                            <i class="bi bi-suit-heart">۷</i>
+                            <i class="bi bi-chat">۲</i>
+
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-part">
+            <article class="col-4 about-us">
+                <div class="footer-logo">
+                    <img src="pic/footer logo.png" alt="">
+                </div>
+                <div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+                        مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                </div>
+                <div>
+                    <h6>
+                        شماره تماس: 09137592384
+
+                    </h6>
+                    <h6>
+                        ایمیل پشتیبانی: tahamiehsan@yahoo.com
+
+                    </h6>
+                    <h6>
+                        شبکه های اجتماعی: ehsan_tha@
+
+
+                    </h6>
+                </div>
+            </article>
+            <article class="container col-8 how-to-buy">
+                <div class="about">
+                    <h2>
+                        نحوه سفارش
+                    </h2>
+                    <a href="">
+                        چطور سفارش بدم؟
+                    </a>
+                    <a href="">
+                        شرایط ارسال چطوره؟
+                    </a>
+                    <a href="">
+                        پرداخت هزینه
+
+                    </a>
+                    <a href="">
+                        چرا به شما اعتماد کنم؟
+
+                    </a>
+                    <a href="">
+                        ضمانت چه شرایطی داره؟
+
+                    </a>
+                    <a href="">
+                        آیا امکان عودت وجود داره؟
+
+                    </a>
+                </div>
+                <div class="about">
+                    <h2>
+                        درباره سپند
+
+                    </h2>
+                    <a href="">
+                        درباره محصولات
+                    </a>
+                    <a href="">
+                        تماس با ما
+
+                    </a>
+                    <a href="">
+                        روش های ارسال کالا
+
+                    </a>
+                    <a href="">
+                        سایت ما در شبکه های اجتماعی
+
+                    </a>
+                    <a href="">
+                        تبلیغات
+                    </a>
+                    <a href="">
+                        شرایط عودت کالا
+
+                    </a>
+                </div>
+                <div class="about">
+                    <h2>
+                        اعتماد
+                    </h2>
+                    <a href="">
+                        نماد الکترونیکی
+
+                    </a>
+                    <a href="">
+                        ضمانت بازگشت وجه
+
+                    </a>
+                    <a href="">
+                        باشگاه مشتریان
+
+                    </a>
+                    <a href="">
+                        آدرس فروشگاه فیزیکی
+
+                </div>
+            </article>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://kit.fontawesome.com/6b8d9ca45f.js" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/darkmode.js"></script>
+
+</html>
