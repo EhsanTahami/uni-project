@@ -14,6 +14,7 @@
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="css/unpkg.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -208,13 +209,18 @@
                             <!-- responsive sign in box -->
                             <div class="sign-box" id="sign-box-responsive">
                                 <div class="cart-box" style="cursor:pointer;">
-                                    <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart"
+                                    <h1 class="cart-counter">
+                                        <img class="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart"
                                         title="سبد خرید">
-                                </div>
 
-                                <button>
-                                    <span>ورود | ثبت نام</span>
-                                </button>
+                                    </h1>
+                                </div>
+                                <a  href="/login.html">
+                                    <button type="submit" href="/login.html">
+                                      ورود | ثبت نام
+                                    </button>
+    
+                                </a>
                             </div>
                             <!-- responsive sign in box end -->
 
@@ -243,20 +249,28 @@
 
                     <div class="col-lg-3 col-sm-4">
                         <div class="sign-box">
-                            <div class="cart-box" style="cursor:pointer;">
-                                <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart" title="سبد خرید">
-                            </div>
+                            <!-- cart part -->
+                            <h1 class="cart-counter">
+                                <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart"
+                                title="سبد خرید">
 
-                            <button>
-                                <span>ورود | ثبت نام</span>
-                            </button>
-                        </div>
+                            </h1>
+
+                            <a  href="/login.html">
+                                <button type="submit" href="/login.html">
+                                  ورود | ثبت نام
+                                </button>
+
+                            </a>
+                    </div>
 
                     </div>
                 </div>
             </div>
 
         </section>
+        <div class="selected-products"></div>
+
 
         <!-- nav bar -->
         <div class="container">
@@ -269,10 +283,10 @@
                                 <!-- Mobile -->
                                 <a href="#">گوشی موبایل</a>
                                 <img src="pic/down-arrow-svgrepo-com.svg" />
-                                <div class="product-menu">
+                                <div class="product-menu mobile-banners animate__slideInUp">
                                     <div class="dropdown-items">
                                         <div class="dropdown-header">
-                                            <p>خرید انواع مدل های گوشی موبایل</p>
+                                            <h3>خرید انواع مدل های گوشی موبایل</h3>
                                         </div>
                                         <a href="#">
                                             آیفون
@@ -285,8 +299,8 @@
                                         </a>
                                     </div>
                                     <div class="dropdown-img">
-                                        <img src="pic/smartphone banner 2.png" alt="خرید گوشی موبایل"
-                                            title="خرید انواع گوشی موبایل">
+                                        <!-- <img src="pic/smartphone banner 2.png" alt="خرید گوشی موبایل"
+                                            title="خرید انواع گوشی موبایل"> -->
                                     </div>
                                 </div>
 
@@ -294,10 +308,10 @@
                             <!-- Lap top -->
                             <li class="more-menu" id="show-product-menu"><a href="">لپ تاپ</a>
                                 <img src="pic/down-arrow-svgrepo-com.svg" />
-                                <div class="product-menu">
+                                <div class="product-menu laptop-banners animate__slideInUp">
                                     <div class="dropdown-items">
                                         <div class="dropdown-header">
-                                            <p>خرید انواع مدل های لپ تاپ</p>
+                                            <h3>خرید انواع مدل های لپ تاپ</h3>
                                         </div>
                                         <a href="#">
                                             مک بوک
@@ -314,21 +328,21 @@
 
                                     </div>
                                     <div class="dropdown-img">
-                                        <img src="pic/خرید لپ تاپ.png" alt="خرید گوشی موبایل"
-                                            title="خرید انواع گوشی موبایل">
+                                        <!-- <img src="pic/خرید لپ تاپ.png" alt="خرید گوشی موبایل"
+                                            title="خرید انواع گوشی موبایل"> -->
                                     </div>
                                 </div>
 
                             </li>
                             <!-- Head Phone -->
-                            <li><a href="">هدفون و هندزفری</a></li>
+                            <li><a href="#">هدفون و هندزفری</a></li>
                             <!-- smart watch -->
                             <li class="more-menu" id="show-product-menu"><a href="">ساعت هوشمند</a>
                                 <img src="pic/down-arrow-svgrepo-com.svg" />
-                                <div class="product-menu">
+                                <div class="product-menu smartwatch-banners animate__slideInUp">
                                     <div class="dropdown-items">
                                         <div class="dropdown-header">
-                                            <p>خرید انواع مدل های ساعت هوشمند</p>
+                                            <h4>خرید انواع مدل های ساعت هوشمند</h4>
                                         </div>
 
                                         <a href="#">
@@ -339,9 +353,9 @@
                                         </a>
                                     </div>
                                     <div class="dropdown-img">
-                                        <img src="pic/خرید ساعت ها هوشمند.png" alt="خرید ساعت هوشمند"
+                                        <!-- <img src="pic/خرید ساعت ها هوشمند.png" alt="خرید ساعت هوشمند"
                                             title="خرید انواع  مدل های ساعت هوشمند" loading="lazy"
-                                            style="width: 300px;">
+                                            style="width: 300px;"> -->
                                     </div>
                                 </div>
 
@@ -396,7 +410,7 @@
                 <h3 class="main-product-items-covertxt1">هدفون ها</h3>
                 <span class="main-product-items-covertxt2">تا 15% تخفیف</span>
             </div>
-            <div class="main-product-items">
+            <div class="main-product-items" >
                 <img src="pic/computer banner.webp" alt="بنر کامپیوتر" title="تا 10 درصد تخفیف">
                 <h3> کامپیوتر</h3>
                 <span>و تجهیزات جانبی</span>
@@ -416,7 +430,7 @@
 
     <!-- most sale products start -->
 
-    <section class="container" id="most-sale-product-container">
+    <section class="container">
         <div class="most-sale-title">
             <a href="#">
                 <h2>محصولات پرفروش</h3>
@@ -425,7 +439,7 @@
         <div class="most-sale-product-grid">
             <div class="most-sale-product">
                 <div class="off-box">تخفیف</div>
-                <img src="pic/محصول پرفروش ساعت هوشمند.png.webp" alt="">
+                <img class="most-sale-pic" src="pic/محصول پرفروش ساعت هوشمند.png.webp" alt="">
                 <h3>ساعت هوشمند اپل واچ 3 مدل 38mm Gold</h3>
                 <div class="product-price">
                     <span class="old-price">۳,۲۰۰,۰۰۰ تومان</span>
@@ -433,11 +447,11 @@
 
                 </div>
                 <div>
-                    <button>افزودن به سبد خرید</button>
+                    <button type="button" class="buy-btn">افزودن به سبد خرید</button>
                 </div>
             </div>
             <div class="most-sale-product">
-                <img src="pic/محصول پزفروش لپ تاپ.webp" alt="">
+                <img class="most-sale-pic" src="pic/محصول پزفروش لپ تاپ.webp" alt="">
                 <h3>لپ تاپ 15 اینچی ایسر مدل Predator 15 G9-593-76KB </h3>
                 <span>۱۲,۰۰۰,۰۰۰ تومان</span>
                 <div>
@@ -445,7 +459,7 @@
                 </div>
             </div>
             <div class="most-sale-product">
-                <img src="pic/محصول پرفروش ساعت کلاسیک.webp" alt="ساعت هوشمند سامسونگ" style="width: 238px;">
+                <img class="most-sale-pic" src="pic/محصول پرفروش ساعت کلاسیک.webp" alt="ساعت هوشمند سامسونگ" style="width: 238px;">
                 <h3>ساعت هوشمند سامسونگ مدل Gear S3 Frontier SM-R760</h3>
                 <span>۱,۹۸۰,۰۰۰ تومان</span>
                 <div>
@@ -453,7 +467,7 @@
                 </div>
             </div>
             <div class="most-sale-product">
-                <img src="pic/محصول پرفروش هدفون بی سیم.webp" alt="">
+                <img class="most-sale-pic" src="pic/محصول پرفروش هدفون بی سیم.webp" alt="">
                 <h3>هدفون بلوتوث لیبراتون Libratone Q Adapt On-Ear Headphones</h3>
                 <span>
                     ۵۶۰,۰۰۰ تومان
@@ -464,7 +478,7 @@
             </div>
             <div class="most-sale-product">
                 <div class="off-box">تخفیف</div>
-                <img src="pic/محصول پرفروش آیفون xs.webp" alt="">
+                <img class="most-sale-pic" src="pic/محصول پرفروش آیفون xs.webp" alt="">
                 <h3>گوشی موبایل اپل مدل XS Max دو سیم‌ کارت
                 </h3>
                 <div class="product-price">
@@ -477,16 +491,20 @@
                 </div>
             </div>
             <div class="most-sale-product">
-                <img src="pic/دسته ps5.png" alt="" style="width: 190px;">
+                <img class="most-sale-pic" src="pic/دسته ps5.png" alt="" style="width: 190px;">
                 <h3>دسته PlayStation 5 دوتایی</h3>
                 <span>۱,۸۰۰,۰۰۰ تومان</span>
-                <div>
-                    <button>افزودن به سبد خرید</button>
+                <div class="button-box">
+                    <button type="button">افزودن به سبد خرید</button>
+                    <a href="productPage.html">
+                        <button id="more-details" type="button" class="more-details">جزئیات بیشتر</button>
+
+                    </a>
                 </div>
             </div>
             <div class="most-sale-product">
                 <div class="off-box">تخفیف</div>
-                <img src="pic/محصول پرفروش ps5.png" alt="">
+                <img class="most-sale-pic" src="pic/محصول پرفروش ps5.png" alt="">
                 <h3>
                     کنسول بازی PS5 DIGITAL EUROPE سری 11
                 </h3>
@@ -495,12 +513,16 @@
                     <span class="new-price">۲۰,۵۰۰,۰۰۰ تومان</span>
 
                 </div>
-                <div>
-                    <button>افزودن به سبد خرید</button>
+                <div class="button-box">
+                    <button type="button">افزودن به سبد خرید</button>
+                    <a href="productPage -ps5.html">
+                        <button id="more-details" type="button" class="more-details">جزئیات بیشتر</button>
+
+                    </a>
                 </div>
             </div>
             <div class="most-sale-product">
-                <img src="pic/محصول پرفروش کاور ایفون.png" alt="" style="width: 210px;">
+                <img class="most-sale-pic" src="pic/محصول پرفروش کاور ایفون.png" alt="" style="width: 210px;">
                 <h3>قاب پشتی مدل نیک برای ایفون 11 ("6.1)</h3>
                 <span>۲۵۰,۰۰۰ تومان</span>
                 <div>
@@ -773,9 +795,13 @@
                     گوشی موبایل اپل آیفون 13 پرو مکس 256 گیگابایت
 
                 </h3>
-                <span>۴۹,۴۹۹,۰۰۰ تومان تومان</span>
-                <div>
-                    <button>افزودن به سبد خرید</button>
+                <span>۴۹,۴۹۹,۰۰۰  تومان</span>
+                <div class="button-box">
+                    <button type="button">افزودن به سبد خرید</button>
+                    <a href="productPage.html">
+                        <button id="more-details" type="button" class="more-details">جزئیات بیشتر</button>
+
+                    </a>
                 </div>
             </div>
             <div class="most-sale-product">
@@ -810,7 +836,7 @@
     <section class="container warranty-instagram-info">
         <div class="row">
             <div class="warranty-instagram-info-inner">
-                <div class="warranty-info fadeingIn">
+                <div class="warranty-info" id="comeInWarranty">
                     <picture class="warranty-info-pic">
                         <img src="pic/عکس موبایل-گارانتی 2.jpg" alt="عکس موبایل-گارانتی" title="ضمانت نامه ۳۶ ماهه ">
                         <div class="warranty-info-text">
@@ -822,23 +848,26 @@
                         </div>
                     </picture>
                 </div>
-                <a href="https://www.instagram.com/ehsan_tha/">
-                    <div class="instagram-info fadeingIn">
-                        <div>
-                            <img src="pic/instagram-logo-glyph.png" alt="instagram logo"
-                                style="width: 80px; height:80px ;">
-                            <h2>
-                                در اینستاگرام ما را دنبال کنید
-                            </h2>
-                            <h4>
-                                مشاهده آخرین جشنواره ها، تخفیف ها، محصولات جدید و اطلاع رسانی های فروشگاه
-
-
-                            </h4>
+                <div class="instagram-id" id="comeInInstagram">
+                    <a class="instagram-link" href="https://www.instagram.com/ehsan_tha/">
+                        <div class="instagram-info fadeingIn">
+                            <div>
+                                <img src="pic/instagram-logo-glyph.png" alt="instagram logo"
+                                    style="width: 80px; height:80px ;">
+                                <h2>
+                                    در اینستاگرام ما را دنبال کنید
+                                </h2>
+                                <h4>
+                                    مشاهده آخرین جشنواره ها، تخفیف ها، محصولات جدید و اطلاع رسانی های فروشگاه
+    
+    
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-
-                </a>
+    
+                    </a>
+    
+                </div>
             </div>
         </div>
     </section>
@@ -859,7 +888,7 @@
                     <img src="pic/iPhone-14-Pro-1-1.png" alt="iPhone 14 Pro">
                     <div class="hover-shadow">
                         <span>
-                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۸</i>
 
 
 
@@ -875,9 +904,9 @@
                         <a href="#">
                             <h5>
                                 آیفون ۱۴ شاید به ارتباط ماهواره‌ای مجهز شود
-    
+
                             </h5>
-    
+
                         </a>
                         <span>
                             ۶ شهریور ۱۴۰۱
@@ -886,15 +915,15 @@
                     </div>
                     <div class="hover-shadow">
                         <span>
-                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۸</i>
 
 
 
 
                         </span>
                         <span>
-                            <i class="bi bi-suit-heart">۷</i>
-                            <i class="bi bi-chat">۲</i>
+                            <i class="bi bi-suit-heart">۶</i>
+                            <i class="bi bi-chat">۹</i>
 
                         </span>
                     </div>
@@ -906,7 +935,7 @@
                             <h5>
                                 اپل واچ پرو ممکن است در رویداد ۱۶ شهریور معرفی شود
                             </h5>
-    
+
                         </a>
                         <span>
                             ۶ شهریور ۱۴۰۱
@@ -930,14 +959,14 @@
 
                 </div>
                 <div class="weblog-post">
-                    <img src="pic/نقد و بررسی آنر 9X.jpg" alt="">
+                    <img src="pic/نقد و بررسی آنر 9X.jpg" alt="آنر 9">
                     <div class="weblog-post-text">
                         <a href="#">
                             <h5>
                                 نقد و بررسی کلاسیک گوشی آنر X9
-    
+
                             </h5>
-    
+
                         </a>
                         <span>
                             ۶ شهریور ۱۴۰۱
@@ -946,15 +975,15 @@
                     </div>
                     <div class="hover-shadow">
                         <span>
-                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۱۵</i>
 
 
 
 
                         </span>
                         <span>
-                            <i class="bi bi-suit-heart">۷</i>
-                            <i class="bi bi-chat">۲</i>
+                            <i class="bi bi-suit-heart">۴</i>
+                            <i class="bi bi-chat">۰</i>
 
                         </span>
                     </div>
@@ -966,9 +995,9 @@
                         <a href="#">
                             <h5>
                                 رشد سامسونگ در بازار ساعت‌های هوشمند همچنان ادامه دارد
-    
+
                             </h5>
-    
+
                         </a>
                         <span>
                             ۶ شهریور ۱۴۰۱
@@ -976,15 +1005,15 @@
                     </div>
                     <div class="hover-shadow">
                         <span>
-                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۳</i>
+                            <i class="bi bi-stopwatch"> دقیقه مطالعه ۱۲</i>
 
 
 
 
                         </span>
                         <span>
-                            <i class="bi bi-suit-heart">۷</i>
-                            <i class="bi bi-chat">۲</i>
+                            <i class="bi bi-suit-heart">۵</i>
+                            <i class="bi bi-chat">۱۰</i>
 
                         </span>
                     </div>
@@ -1052,7 +1081,7 @@
                 </div>
                 <div class="about">
                     <h2>
-                        درباره سپند
+                        درباره 
 
                     </h2>
                     <a href="">

@@ -1,0 +1,416 @@
+/* * {
+    transition: width 0.15s ease;
+    -webkit-transition: width 0.15s ease;
+    -moz-transition: width 0.15s ease;
+    -ms-transition: width 0.15s ease;
+    -o-transition: width 0.15s ease;
+} */
+@media(max-width:1400px) {
+    
+    #slider ul li img {
+        width: 100%;
+    }
+
+    .scroll-bg-textbox {
+        right: 15rem;
+    }
+
+    .main-product-items img {
+        width: 290px;
+        height: 198px;
+    }
+
+    .warranty-info {
+        margin: 0 auto;
+    }
+
+    .warranty-instagram-info-inner img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .warranty-instagram-info-inner {
+        flex-direction: column;
+
+    }
+
+    .instagram-info,
+    .instagram-link {
+        width: 760px;
+        margin: 5rem auto;
+    }
+
+
+}
+
+@media(max-width:340px) {
+
+    .info-bar {
+        height: 50px;
+
+    }
+
+    .backbtn,
+    .nextbtn,
+    .captiontxt {
+        font-size: 11px
+    }
+
+    .warranty-info-text h3 {
+        font-size: 12px;
+    }
+
+    .warranty-info-text h2 {
+        font-size: 15px;
+
+    }
+
+    .warranty-info-text button {
+        font-size: 15px;
+        color: #fff;
+        width: 12px;
+        height: 34px;
+    }
+}
+
+
+
+
+
+@media(max-width:1200px) {
+
+    .logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .humber-menu-pic {
+        display: inline-block;
+    }
+
+    #sign-box-responsive {
+        display: none;
+    }
+
+    #slider {
+        width: 980px;
+    }
+
+    .main-product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 311px));
+    }
+
+    .swiper-container .swiper-slide .slide-card {
+        padding: 5px 16px;
+    }
+
+}
+
+@media(max-width:1080px) {
+
+    .search-box>div>input {
+        width: 320px;
+
+    }
+
+    #sign-box-responsive {
+        display: none;
+    }
+
+    .warranty-instagram-info-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .warranty-instagram-info-inner img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .warranty-info {
+        margin: 0 auto;
+        margin-bottom: 3rem;
+
+    }
+
+    .instagram-info {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+
+
+    }
+}
+
+@media (max-width: 992px) {
+
+    .main-product-items img {
+        width: 190px;
+        height: 130px;
+    }
+
+    .main-product-items h3 {
+        top: 8px;
+        right: 25px;
+        font-size: 24px;
+    }
+
+    .main-product-items span {
+        top: 50px;
+        right: 29px;
+        font-size: 16px;
+    }
+
+    .main-product-items #second-span {
+        position: absolute;
+        top: 80px;
+        right: 29px;
+        font-size: 14px;
+    }
+
+    #scroll-bg {
+        position: relative;
+        height: 50vh;
+        width: 1374px;
+
+
+    }
+
+
+    .swiper-container .swiper-slide .slide-card .slide-card-head-img {
+        max-width: 180px !important;
+        max-height: 135px !important;
+    }
+
+    .swiper-container .swiper-slide .slide-card .slide-card-body h5 {
+        font-size: 14px;
+    }
+
+    .salebox-botton {
+        max-width: 140px;
+    }
+
+    #best-products {
+        height: 400px;
+    }
+
+
+
+}
+
+@media(max-width:767px) {
+    .main-product-flex {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .main-product-items img {
+        width: 352px;
+        height: 240px;
+    }
+
+    .main-product-items h3 {
+        position: absolute;
+        top: 8px;
+        font-size: 37px;
+        color: #fff;
+    }
+
+    .main-product-items span {
+        position: absolute;
+        top: 50px;
+        right: 29px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .main-product-items #second-span {
+        top: 80px;
+        right: 29px;
+        font-size: 18px;
+    }
+
+    #scroll-bg {
+        position: relative;
+        height: 50vh;
+        width: 1374px;
+        background-position: 34% 30px;
+
+    }
+
+    .scroll-bg-textbox {
+        right: 2rem;
+    }
+
+
+
+    #best-products {
+        max-height: 350px;
+        max-width: 410px;
+    }
+
+    .swiper-slide {
+        width: 410px !important;
+    }
+
+    .swiper-container .swiper-slide {
+        margin-top: 15px;
+    }
+
+
+    .warranty-instagram-info-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    .warranty-instagram-info-inner img {
+        margin-bottom: 3rem;
+    }
+
+    .warranty-info-text {
+        top: -20px;
+        left: 45px;
+
+    }
+
+    .warranty-info-text h3 {
+        font-size: 14px;
+    }
+
+    .warranty-info-text h2 {
+        font-size: 26px;
+
+
+    }
+
+    .warranty-info-text button {
+        font-size: 16px;
+        color: #fff;
+        width: 150px;
+        height: 34px;
+
+    }
+    .hover-shadow{
+        bottom: 65px;
+    }
+
+    .footer-part {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .how-to-buy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+@media(max-width:620px) {
+
+    .sign-box {
+        display: none;
+    }
+
+    #sign-box-responsive {
+        display: flex;
+    }
+
+    .humber-menu-pic {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search-box div {
+        display: flex;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:620px) {
+    .col-sm-2 {
+        width: 100%;
+    }
+
+    .col-sm-6 {
+        width: 100%;
+    }
+
+    #scroll-bg {
+        width: auto;
+    }
+
+    .scroll-bg-pic {
+        background-position: 26% 30px;
+
+    }
+
+    .scroll-bg-textbox {
+        right: 5rem;
+    }
+
+    .warranty-info-text h3 {
+        font-size: 12px;
+    }
+
+    .warranty-info-text h2 {
+        font-size: 16px;
+
+    }
+
+    .warranty-info-text button {
+        font-size: 12px;
+        color: #fff;
+        max-width: 120px;
+        max-height: 24px;
+
+
+    }
+    #toggle {
+        width: 40px;
+        padding: 0;
+        transition: all 0.35s ease;
+        -webkit-transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+        -ms-transition: all 0.35s ease;
+        -o-transition: all 0.35s ease;
+
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .info-bar{
+        height: 50px;
+        transition: all 0.35s ease;
+        -webkit-transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+        -ms-transition: all 0.35s ease;
+        -o-transition: all 0.35s ease;
+
+    }
+
+}
+
+
+
+
+
+.offcanvas-header {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+}

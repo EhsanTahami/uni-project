@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه محصول</title>
+    <link rel="icon" href="pic/Logo icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/unpkg.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productPageStyle.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/productPage-responsive.css">
+
+</head>
+
+<body>
+    <img class="go-to-top-icon" id="myBtn" onclick="topFunction()" src="pic/go to top.png" alt="go top"
+        title="پرش به بالا">
+    <!-- Header -->
+    <div class="header">
+        <!-- Information bar -->
+        <div class="col-lg-12 col-md-12 col-sm-12 info-bar">
+            <div>
+                <div class="info-part">
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a>پشتیبانی: tahamiehsan@yahoo.com</a>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <a>پیگیری سفارش: 09137592384</a>
+                    </span>
+                    <div id="toggle">
+                        <i class="bi bi-moon-fill"></i>
+                        <i class="bi bi-brightness-high-fill"></i>
+                        <div id="ball" onclick="ShiftBall()" class=" ball"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header part 2  search-box & logo & sign-->
+        <section class="header-part2">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+
+                    <div class="col-lg-2 col-sm-2">
+                        <div class="logo">
+                            <a href="index.html"><img src="pic/Logo.png" alt="logo"></a>
+                        </div>
+                        <div class="humber-menu-pic">
+                            <!-- Slide bar -->
+                            <button class="btn btn-primary" id="humber_menu_button" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <i class="fa-solid fa-bars" id="humber-menu-icon"></i>
+
+                            </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">منو</h5> -->
+                                    <img src="pic/Logo.png" alt="logo" title="Ehsan Tahami">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!-- second navbar slide bar (responsive) -->
+                                <div class="offcanvas-body">
+                                    <ul class="sec-nav" id="accordion">
+                                        <!-- Mobile -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item1" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> گوشی موبایل</h3>
+                                                    <img src="pic/down-arrow-svgrepo-com.svg" alt="arrow" />
+
+                                                </a>
+
+                                            </li>
+                                            <div class="collapse" id="item1" data-parent="#accordion">
+                                                <li class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">
+                                                                <h4>آیفون</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>سامسونگ</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>شیائومی</h4>
+                                                            </a></li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                        </div>
+
+                                        <!-- lap top -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item2" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> لپ تاپ </h3>
+                                                    <img src="pic/down-arrow-svgrepo-com.svg" alt="arrow" />
+
+                                                </a>
+
+                                            </li>
+                                            <div class="collapse" id="item2">
+                                                <li class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">
+                                                                <h4>مک بوک</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>ایسوس</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>اچ پی</h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>لنوو</h4>
+                                                            </a></li>
+                                                    </ul>
+
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <!-- Head Phone -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item3" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> هدفون </h3>
+                                                </a>
+                                            </li>
+                                        </div>
+                                        <!-- watch -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item4" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> ساعت های هوشمند </h3>
+                                                    <img src="pic/down-arrow-svgrepo-com.svg" alt="arrow" />
+
+                                                </a>
+
+                                            </li>
+                                            <div class="collapse" id="item4">
+                                                <li class="card-body">
+                                                    <ul>
+                                                        <li><a href="#">
+                                                                <h4>اپل واچ </h4>
+                                                            </a></li>
+                                                        <li><a href="#">
+                                                                <h4>سامسونگ واچ</h4>
+                                                            </a></li>
+                                                    </ul>
+
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <!-- gard -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item5" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> گارد و محافظ صفحه</h3>
+                                                </a>
+
+                                            </li>
+                                        </div>
+                                        <!-- speaker -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item6" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> اسپیکر</h3>
+                                                </a>
+
+                                            </li>
+                                        </div>
+                                        <!-- gadgets -->
+                                        <div class="card">
+                                            <li class="card-header">
+                                                <a href="#item7" class="card-link" data-bs-toggle="collapse">
+                                                    <h3> گجت های پوشیدنی </h3>
+                                                </a>
+
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- END Slide bar -->
+
+                            <!-- responsive sign in box -->
+                            <div class="sign-box" id="sign-box-responsive">
+                                <div class="cart-box" style="cursor:pointer;">
+                                    <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart"
+                                        title="سبد خرید">
+                                </div>
+                                <a href="/login.html">
+                                    <button type="submit" href="/login.html">
+                                        ورود | ثبت نام
+                                    </button>
+
+                                </a>
+                            </div>
+                            <!-- responsive sign in box end -->
+
+
+                        </div>
+                    </div>
+
+                    <!-- search box -->
+
+                    <div class="col-lg-7 col-sm-6">
+
+                        <div class="search-box">
+                            <div>
+                                <input type="search" placeholder="جست و جوی نام برند کالا، دسته بندی و ... ">
+                                <button>
+                                    <span>جستجو</span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- sign box -->
+
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="sign-box">
+                            <div class="cart-box" style="cursor:pointer;">
+                                <img id="cart" src="pic/icons8-shopping-cart-64 (2).png" alt="cart" title="سبد خرید">
+                            </div>
+
+                            <a href="/login.html">
+                                <button type="submit" href="/login.html">
+                                    ورود | ثبت نام
+                                </button>
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- nav bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <nav id="nav">
+                        <ul class="header-ul" id="a">
+                            <!-- mega menu -->
+                            <li class="more-menu" id="show-product-menu">
+                                <!-- Mobile -->
+                                <a href="#">گوشی موبایل</a>
+                                <img src="pic/down-arrow-svgrepo-com.svg" />
+                                <div class="product-menu mobile-banners animate__slideInUp">
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-header">
+                                            <h3>خرید انواع مدل های گوشی موبایل</h3>
+                                        </div>
+                                        <a href="#">
+                                            آیفون
+                                        </a>
+                                        <a href="#">
+                                            سامسونگ
+                                        </a>
+                                        <a href="#">
+                                            شیائومی
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-img">
+                                        <!-- <img src="pic/smartphone banner 2.png" alt="خرید گوشی موبایل"
+                                        title="خرید انواع گوشی موبایل"> -->
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- Lap top -->
+                            <li class="more-menu" id="show-product-menu"><a href="">لپ تاپ</a>
+                                <img src="pic/down-arrow-svgrepo-com.svg" />
+                                <div class="product-menu laptop-banners animate__slideInUp">
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-header">
+                                            <h3>خرید انواع مدل های لپ تاپ</h3>
+                                        </div>
+                                        <a href="#">
+                                            مک بوک
+                                        </a>
+                                        <a href="#">
+                                            ایسوس
+                                        </a>
+                                        <a href="#">
+                                            اچ پی
+                                        </a>
+                                        <a href="#">
+                                            لنوو
+                                        </a>
+
+                                    </div>
+                                    <div class="dropdown-img">
+                                        <!-- <img src="pic/خرید لپ تاپ.png" alt="خرید گوشی موبایل"
+                                        title="خرید انواع گوشی موبایل"> -->
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- Head Phone -->
+                            <li><a href="#">هدفون و هندزفری</a></li>
+                            <!-- smart watch -->
+                            <li class="more-menu" id="show-product-menu"><a href="">ساعت هوشمند</a>
+                                <img src="pic/down-arrow-svgrepo-com.svg" />
+                                <div class="product-menu smartwatch-banners animate__slideInUp">
+                                    <div class="dropdown-items">
+                                        <div class="dropdown-header">
+                                            <h4>خرید انواع مدل های ساعت هوشمند</h4>
+                                        </div>
+
+                                        <a href="#">
+                                            اپل واچ
+                                        </a>
+                                        <a href="#">
+                                            سامسونگ
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-img">
+                                        <!-- <img src="pic/خرید ساعت ها هوشمند.png" alt="خرید ساعت هوشمند"
+                                        title="خرید انواع  مدل های ساعت هوشمند" loading="lazy"
+                                        style="width: 300px;"> -->
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- gard -->
+                            <li><a href="">قاب و محافظ</a></li>
+                            <li><a href="#">اسپیکر</a> </li>
+                            <li><a href="">گجت های پوشیدنی</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="offer-box">
+                        <a href="#">بزرگ ترین حراج آنلاین را از دست نده!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar End-->
+
+    <!-- Product Details start -->
+    <section class="container main-product">
+        <div class="col-lg-7 col-md-12 col-sm-12 slider">
+            <!-- slider photos  small img-->
+            <div class="product-small-img">
+                <img src="pic/ps 5/ps5white.jpg" alt="" onclick="myFunction(this)">
+                <img src="pic/ps 5/ps5 pack.jpg" alt="ps5" onclick="myFunction(this)">
+                <img src="pic/ps 5/ps5black.jpg" alt="black-color-ps5" onclick="myFunction(this)">
+                <img src="pic/ps 5/ps5 img.jpg" alt="ps5" onclick="myFunction(this)">
+
+            </div>
+            <!-- slider photos  container img-->
+
+            <div class="img-container">
+                <img id="imagebox" src="pic/ps 5/ps5white.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12 buy-detail">
+            <div>
+                <!-- title -->
+                <div class="title">
+                    <h2>
+                        کنسول بازی سونی مدل Playstation 5
+                    </h2>
+                </div>
+                <!-- price -->
+                <div class="price">
+                    <strong>
+                        <h4>
+                            ۲۳,۲۰۰,۰۰۰ تومان
+
+                        </h4>
+
+                    </strong>
+                </div>
+                <div class="product-detail">
+                    <p>
+                        اگر بخواهیم این کنسول را با نوع دیجیتال آن مقایسه کنیم، تنها می‌توان به نداشتن درایو نوری اشاره
+                        کرد. اگر علاقه‌دارید که آرشیوی از بازی‌ها به صورت دیسک تهیه کنید و یا دانلود بازی‌ها آن هم با
+                        حجم‌های زیاد برای شما مقدور نیست، این کنسول می‌تواند بهترین گزینه برای شما باشد. اما اگر
+                        می‌خواهید بازی‌ها را به صورت دیجیتالی خریداری کرده و از نظر اینترنت و دانلود هم مشکلی ندارید،
+                        بهتر است نوع دیجیتال آن را خریداری نمایید چراکه قیمت بسیار پایین‌تری نسبت به این مدل دارد.
+                        همچنین برای تجربه بهتر و استفاده از حداکثر توان این کنسول بهتر است از تلویزیون و یا مانیتور 4K
+                        با نرخ بروزرسانی ۱۲۰ هرتز استفاده نمایید و آن زمان است که می‌توانید تفاوت را بیش از پیش احساس
+                        کنید. در غیر این صورت بسیاری از قابلیت‌های این کنسول را از دست‌ خواهید داد. همچنین در مقایسه این
+                        کنسول با XBOX series X همانطور که در بالا گفته شد، از نظر سخت افزاری مقداری ضعیف بوده و حافظه
+                        داخلی کمتری نیز در اختیار کاربران قرار می‌دهد اما تجربه ثابت کرده که هیچ موقع قدرت سخت افزاری در
+                        کنسول‌ها باعث برتری آن نشده و تنها خدمات بهتر و ارائه بازی‌های بیشتر و باکیفیت‌تر توانسته نظر
+                        بسیاری از کاربران را به خود جلب کند. پس باید منتظر ماند و دید که این دو شرکت در آینده چه کار
+                        خواهند کرد.
+
+
+                    </p>
+                </div>
+                <!-- product-color -->
+                <div class="product-color">
+                    <div>
+                        <h5 style="margin-top: 10px;">
+                            انتخاب رنگ :
+                        </h5>
+
+                    </div>
+                    <div id="color" class="color color-white active-color"></div>
+                    <div id="color" class="color color-black"></div>
+                </div>
+                <div class="buybtn">
+                    <button type="button">
+                        <h4>
+                            افزودن به سبد خرید
+                        </h4>
+                        <i class="bi bi-cart2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="col-12 section-two">
+        <div class="detail-table">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        <h4>مشخصات</h4>
+                    </button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        <h4>
+                            شرایط عودت کالا
+                        </h4>
+                    </button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        <h4>
+                            گارانتی
+                        </h4>
+                    </button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="container">
+                    <div class=" tab-pane fade show active" id="nav-home" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        <table class="table table-striped">
+                            <tr class="col-6">
+                                <th class="col-auto">
+                                    <strong>
+                                        کشور سازنده
+                                    </strong>
+                                </th>
+                                <td>
+                                    امریکا
+                                </td>
+                            </tr>
+                            <tr class="col-6">
+                                <th class="col-auto">
+                                    <strong>
+                                        برند
+                                    </strong>
+                                </th>
+                                <td>
+                                    اپل
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="col-auto">
+                                    <strong>
+                                        جنس
+                                    </strong>
+                                </th>
+                                <td>
+                                    آلمینیوم
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade col-12" id="nav-profile" role="tabpanel"
+                        aria-labelledby="nav-profile-tab">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                            درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت
+                            بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در
+                            این
+                            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                            رسد
+                            وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                            اساسا مورد استفاده قرار گیرد.
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                            درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت
+                            بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در
+                            این
+                            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                            رسد
+                            وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                            اساسا مورد استفاده قرار گیرد.
+
+                        </p>
+                    </div>
+                    <div class="tab-pane fade col-12" id="nav-contact" role="tabpanel"
+                        aria-labelledby="nav-contact-tab">
+                        <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                            تکنولوژی
+                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                            درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت
+                            بیشتری
+                            را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در
+                            این
+                            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان
+                            رسد
+                            وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
+                            اساسا مورد استفاده قرار گیرد.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="https://kit.fontawesome.com/6b8d9ca45f.js" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/style.js"></script>
+<script src="js/darkmode.js"></script>
+<script src="js/productpage.js"></script>
+<script>
+    function setNewColor(color) {
+        document.querySelector('.img-container img').src = `pic/ps 5/ps5${color}.jpg`;
+    }
+</script>
+
+</html>
